@@ -4,7 +4,6 @@ clc
 addpath('.')
 addpath('./../matlab_utils')
 
-
 % hw4arm takes theta_1 through theta_6 in order
 % and plots the frames of the arm accordingly
 
@@ -53,7 +52,7 @@ disp('q = (0, 90, 90, 30, 90, 0)')
 % Call Function
 hw4arm(0, 90*pi/180, 90*pi/180, 30*pi/180, 90*pi/180, 0);
 
-% Problem 2 (a)
+% Problem 2 (b)
 
 % Configure plot
 figure

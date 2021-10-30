@@ -1,9 +1,9 @@
-function se3Matrix = se3Inv(se)
+function SE3Matrix = SE3Inv(SE)
     % Gets transpose of the rotation matrix
-    R = se(1:3,1:3).';
+    R = SE(1:3,1:3).';
     
     % Multiplies the position vector by the transposed rotation matrix
-    P = -R * se(1:3,4);
-    se3Matrix = [R P;
+    P = -R * SE(1:3,4);
+    SE3Matrix = [R P;
                 0 0 0 1];
 end

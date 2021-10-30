@@ -23,7 +23,7 @@ qi = q;
 
 for i = 1:10
     dx = x_des - fx_ee(qi);
-    dq = inv(subs(J, [th1 th2], [qi(1) qi(2)]))*dx;
+    dq = (subs(J, [th1 th2], [qi(1) qi(2)]))\dx;
     qi = eval(qi + dq);
     disp(fx_ee(qi));
 end
